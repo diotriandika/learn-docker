@@ -61,20 +61,20 @@ Isi dengan konfigurasi dibawah
 version: '3'
 
 services:
-	stemsi-registry:
-		container_name: stemsi-registry
-		image: registry:latest
-		ports:
-		- "5000:5000"
-		environment:
-			REGISTRY_AUTH: htpasswd
-			REGISTRY_AUTH_HTPASSWD_REALM: Registry
-			REGISTRY_AUTH_HTPASSWD_FILE: /auth/registry.password
-			REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
-		volumes:
-		- ./data:/data
-		- ./auth:/auth
-		restart: always
+  stemsi-registry:
+    container_name: stemsi-registry
+    image: registry:latest
+    ports:
+    - "5000:5000"
+    environment:
+     REGISTRY_AUTH: htpasswd
+     REGISTRY_AUTH_HTPASSWD_REALM: Registry
+     REGISTRY_AUTH_HTPASSWD_FILE: /auth/registry.password
+     REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+    volumes:
+    - ./data:/data
+    - ./auth:/auth
+    restart: always
 ```
 
 ### Step 2 - Setup Authentication
