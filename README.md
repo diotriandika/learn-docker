@@ -50,7 +50,7 @@ Operating System > Hypervisor (VM Manager) > VM OS (OS untuk VM) > Applications 
 
  Hal ini membuat Resource yang diperlukan untuk menjalankan sebuah aplikasi menjadi tidak efisien dan boros akan resource karena banyaknya stack yang diperlukan.
 
-Lalu bagaimana dengan cara kerja sebuah Container? Container berjalan secara terisolasi dengan menggunakan images untuk menjalankan container itu sendiri. Maka dari itu resource yang diperlukan sangat sedikit karena pengguna dapat 
+Lalu bagaimana dengan cara kerja sebuah Container? Container berjalan secara terisolasi dengan menggunakan kernel dari Host OS untuk menjalankan container itu sendiri. Maka dari itu resource yang diperlukan sangat sedikit karena pengguna dapat 
 
 ```bash
 Operating System > Container Manager (Docker) > Applications Depedency > Applications
